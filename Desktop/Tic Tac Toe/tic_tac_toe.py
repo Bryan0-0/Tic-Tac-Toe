@@ -123,6 +123,7 @@ class TicTacToeBoard(tk.Tk):
         self.display.pack()
 
     def _create_board_grid(self):
+        '''create fram object child of the game’s main window'''
         grid_frame = tk.Frame(master=self)
         grid_frame.pack()
         for row in range(self._game.board_size):
